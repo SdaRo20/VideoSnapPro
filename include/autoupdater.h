@@ -25,7 +25,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ── Change these two lines to match YOUR GitHub repo ─────────────────────────
-#define GITHUB_OWNER  "YourGitHubUsername"
+#define GITHUB_OWNER  "SdaRo20"
 #define GITHUB_REPO   "VideoSnapPro"
 
 // ── Current app version — bump this every release ────────────────────────────

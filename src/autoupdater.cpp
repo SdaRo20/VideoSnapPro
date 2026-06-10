@@ -18,10 +18,10 @@ void AutoUpdater::checkForUpdates(bool silent)
 {
     m_silent = silent;
 
-    // GitHub Releases API — returns JSON with latest release info
+    // GitHub Releases API — checks YOUR repo for latest release
     QString url = QString("https://api.github.com/repos/%1/%2/releases/latest")
-                      .arg(GITHUB_OWNER)
-                      .arg(GITHUB_REPO);
+                      .arg(GITHUB_OWNER)   // "SdaRo20"
+                      .arg(GITHUB_REPO);   // "VideoSnapPro"
 
     QUrl requestUrl(url);
     QNetworkRequest req(requestUrl);
@@ -30,7 +30,6 @@ void AutoUpdater::checkForUpdates(bool silent)
     req.setRawHeader("Accept", "application/vnd.github+json");
     req.setAttribute(QNetworkRequest::RedirectPolicyAttribute,
                      QNetworkRequest::NoLessSafeRedirectPolicy);
-
     m_nam->get(req);
 }
 
@@ -63,13 +62,10 @@ void AutoUpdater::onReplyFinished(QNetworkReply *reply)
         return;
     }
 
-    // Release page URL
-    QString releaseUrl = obj["html_url"].toString();
-
-    // Release notes (body markdown)
+    QString releaseUrl   = obj["html_url"].toString();
     QString releaseNotes = obj["body"].toString();
     if (releaseNotes.length() > 800)
-        releaseNotes = releaseNotes.left(800) + "\n…";
+        releaseNotes = releaseNotes.left(800) + "\n...";
 
     if (isNewer(latestTag, APP_VERSION)) {
         emit updateAvailable(stripV(latestTag), releaseUrl, releaseNotes);
@@ -79,7 +75,7 @@ void AutoUpdater::onReplyFinished(QNetworkReply *reply)
     }
 }
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+// ─── Helpers ──────────────────────────────────────────────────────────────────
 
 QString AutoUpdater::stripV(const QString &tag)
 {
@@ -91,15 +87,11 @@ QString AutoUpdater::stripV(const QString &tag)
 
 bool AutoUpdater::isNewer(const QString &latestTag, const QString &current)
 {
-    // Parse both as QVersionNumber — handles "v2.1.0", "2.1.0", "2.1.0-beta"
-    bool ok1, ok2;
     QVersionNumber latest  = QVersionNumber::fromString(stripV(latestTag),  nullptr);
     QVersionNumber running = QVersionNumber::fromString(stripV(current), nullptr);
 
-    if (latest.isNull() || running.isNull()) {
-        // Fallback: simple string compare
+    if (latest.isNull() || running.isNull())
         return stripV(latestTag) > stripV(current);
-    }
 
     return QVersionNumber::compare(latest, running) > 0;
 }
