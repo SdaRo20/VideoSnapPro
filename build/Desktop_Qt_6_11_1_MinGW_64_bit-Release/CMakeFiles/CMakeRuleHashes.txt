@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+06993ddf633b262fb1463c5cd2e97594 CMakeFiles/VideoSnapPro_autogen
+241f6b035a0edf43cc7717a09ce93930 VideoSnapPro_autogen/timestamp

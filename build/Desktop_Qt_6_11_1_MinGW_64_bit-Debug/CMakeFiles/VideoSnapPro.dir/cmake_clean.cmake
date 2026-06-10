@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/VideoSnapPro.dir/VideoSnapPro_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/VideoSnapPro_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/autoupdater.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/autoupdater.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/converterdialog.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/converterdialog.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/downloadqueue.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/downloadqueue.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/downloadworker.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/downloadworker.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/historydialog.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/historydialog.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/main.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/main.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/mainwindow.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/mainwindow.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/metafetcher.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/metafetcher.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/settingsdialog.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/settingsdialog.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/splashscreen.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/splashscreen.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/thememanager.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/thememanager.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro.dir/src/updatedialog.cpp.obj"
+  "CMakeFiles/VideoSnapPro.dir/src/updatedialog.cpp.obj.d"
+  "CMakeFiles/VideoSnapPro_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/VideoSnapPro_autogen.dir/ParseCache.txt"
+  "VideoSnapPro_autogen"
+  "VideoSnapPro.exe"
+  "VideoSnapPro.exe.manifest"
+  "VideoSnapPro.pdb"
+  "libVideoSnapPro.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/VideoSnapPro.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
