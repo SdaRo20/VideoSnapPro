@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a24"/>
+      <stop offset="100%" style="stop-color:#0d0d14"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0b95c"/>
+      <stop offset="100%" style="stop-color:#c09030"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="120" fill="url(#bgGrad)"/>
+  <circle cx="128" cy="128" r="118" fill="none" stroke="#d4a84b" stroke-width="3" opacity="0.4"/>
+  <circle cx="128" cy="108" r="52" fill="url(#arrowGrad)" filter="url(#glow)"/>
+  <rect x="120" y="76" width="16" height="36" rx="4" fill="#111111"/>
+  <polygon points="105,112 151,112 128,138" fill="#111111"/>
+  <rect x="104" y="142" width="48" height="7" rx="3.5" fill="#111111"/>
+  <text x="128" y="190" font-family="Segoe UI, Arial, sans-serif"
+        font-size="22" font-weight="700" fill="#e0e0e0"
+        text-anchor="middle" letter-spacing="1">VideoSnap</text>
+  <text x="128" y="214" font-family="Segoe UI, Arial, sans-serif"
+        font-size="14" font-weight="400" fill="#d4a84b"
+        text-anchor="middle" letter-spacing="3">PRO</text>
+</svg>

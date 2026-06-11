@@ -1,0 +1,5 @@
+D:/Download/VideoSnapPro_v2.1.3_fixed/VideoSnapPro/build/Desktop_Qt_6_11_1_MinGW_64_bit-Release/CMakeFiles/VideoSnapPro.dir
+D:/Download/VideoSnapPro_v2.1.3_fixed/VideoSnapPro/build/Desktop_Qt_6_11_1_MinGW_64_bit-Release/CMakeFiles/edit_cache.dir
+D:/Download/VideoSnapPro_v2.1.3_fixed/VideoSnapPro/build/Desktop_Qt_6_11_1_MinGW_64_bit-Release/CMakeFiles/rebuild_cache.dir
+D:/Download/VideoSnapPro_v2.1.3_fixed/VideoSnapPro/build/Desktop_Qt_6_11_1_MinGW_64_bit-Release/CMakeFiles/VideoSnapPro_autogen_timestamp_deps.dir
+D:/Download/VideoSnapPro_v2.1.3_fixed/VideoSnapPro/build/Desktop_Qt_6_11_1_MinGW_64_bit-Release/CMakeFiles/VideoSnapPro_autogen.dir
