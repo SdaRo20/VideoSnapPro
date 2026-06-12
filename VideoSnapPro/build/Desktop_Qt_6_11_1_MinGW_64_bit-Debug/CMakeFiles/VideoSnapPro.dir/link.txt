@@ -1,0 +1,3 @@
+C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\VideoSnapPro.dir/objects.a
+C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\VideoSnapPro.dir/objects.a @CMakeFiles\VideoSnapPro.dir\objects1.rsp
+C:\Qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\VideoSnapPro.dir/objects.a -Wl,--no-whole-archive -o VideoSnapPro.exe -Wl,--out-implib,libVideoSnapPro.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\VideoSnapPro.dir\linkLibs.rsp
