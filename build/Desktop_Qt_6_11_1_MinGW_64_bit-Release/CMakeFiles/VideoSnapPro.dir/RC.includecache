@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/USER/Downloads/VideoSnapPro_v2.2.4/VideoSnapPro/build/Desktop_Qt_6_11_1_MinGW_64_bit-Release/app.rc
+

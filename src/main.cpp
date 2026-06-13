@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     app.setApplicationName("VideoSnapPro");
-    app.setApplicationVersion("2.1.3");
+    app.setApplicationVersion("2.1.4");
     app.setOrganizationName("VideoSnapPro");
     app.setStyle("Fusion");
 
