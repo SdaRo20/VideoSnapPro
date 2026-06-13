@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "VideoSnapPro",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "VideoSnapPro::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VideoSnapPro-Debug-7eddffc1caadf6f31779.json",
+					"name" : "VideoSnapPro",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VideoSnapPro_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VideoSnapPro_autogen-Debug-01cd78dba3bb53c6b60e.json",
+					"name" : "VideoSnapPro_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VideoSnapPro_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VideoSnapPro_autogen_timestamp_deps-Debug-4edf8ef32451e0abb5c3.json",
+					"name" : "VideoSnapPro_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/USER/Downloads/VideoSnapPro_v2.2.4/VideoSnapPro/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/USER/Downloads/VideoSnapPro_v2.2.4/VideoSnapPro"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
